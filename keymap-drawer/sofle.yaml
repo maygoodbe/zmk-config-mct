@@ -4,7 +4,7 @@ layers:
     ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, PAUSE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
     '$$mdi:apple-keyboard-control$$', LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
   LOW:
-  - '`'
+  - Boot
   - F1
   - F2
   - F3
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Boot
   - {t: ▽, type: trans}
   - Insert
   - Print Scrn
