@@ -1,7 +1,7 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   BAS: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', Esc, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', ↹, A, S, D, F, G, H, J, K, L,
-    ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, MUTE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
+    ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, PAUSE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
     '$$mdi:apple-keyboard-control$$', LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
   LOW:
   - '`'
@@ -46,8 +46,8 @@ layers:
   - KP PLUS
   - '{'
   - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - '&bl BL_ON'
   - '['
   - ']'
   - ;
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - Page Up
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
@@ -95,9 +95,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - CLCK
+  - PAGE DOWN
   - ←
   - ↓
-  - ↑
   - →
   - ⌦
   - $$mdi:backspace-outline$$
