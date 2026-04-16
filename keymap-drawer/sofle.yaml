@@ -71,25 +71,25 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer-slow$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - Boot
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - Insert
   - Print Scrn
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Page Up
-  - {t: ▽, type: trans}
+  - Home
   - UP ARROW
-  - {t: ▽, type: trans}
+  - End
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RGB COLOR HSB(189,100,50)
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -101,7 +101,7 @@ layers:
   - →
   - ⌦
   - $$mdi:backspace-outline$$
-  - {t: ▽, type: trans}
+  - RGB COLOR HSB(97,100,50)
   - UNDO
   - CUT
   - COPY
