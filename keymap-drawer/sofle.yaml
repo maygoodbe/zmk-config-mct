@@ -43,7 +43,7 @@ layers:
   - {t: ▽, type: trans}
   - '='
   - '-'
-  - KP PLUS
+  - +
   - '{'
   - '}'
   - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
@@ -81,14 +81,14 @@ layers:
   - Insert
   - Print Scrn
   - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - Page Up
   - Home
   - UP ARROW
   - End
   - '0'
-  - {t: ▽, type: trans}
+  - DELETE
   - RGB COLOR HSB(189,100,50)
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -114,7 +114,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
