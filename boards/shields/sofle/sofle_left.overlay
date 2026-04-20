@@ -29,3 +29,10 @@
         compatible = "zmk,battery-nrf-vddh";
     };
 };
+
+/ {
+    wired_split: wired_split {
+        compatible = "zmk,wired-split";
+        device = <&pro_micro_serial>;
+    };
+};
