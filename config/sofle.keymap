@@ -35,7 +35,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         lower_layer {
@@ -70,11 +70,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                       &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &out OUT_TOG  &bootloader
-&rgb_ug RGB_EFF                    &kp INS       &kp PSCRN     &kp K_CMENU   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI                    &kp PG_UP        &kp HOME         &kp UP_ARROW     &kp END          &kp N0        &kp DELETE
-&rgb_ug RGB_COLOR_HSB(189,100,50)  &kp LALT      &kp LCTRL     &kp LSHFT     &trans           &kp CLCK                           &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT        &kp DEL       &kp BSPC
-&rgb_ug RGB_COLOR_HSB(97,100,50)   &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans           &trans    &trans  &trans           &trans           &trans           &trans           &trans        &kp ENTER
-                                                 &trans        &trans        &trans           &trans           &trans    &trans  &trans           &trans           &trans           &trans
+&bt BT_CLR                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                               &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &out OUT_TOG  &bootloader
+&rgb_ug RGB_EFF                    &kp INS       &kp PSCRN     &kp K_CMENU   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI                            &kp PG_UP        &kp HOME         &kp UP_ARROW     &kp END          &kp N0        &kp DELETE
+&rgb_ug RGB_COLOR_HSB(189,100,50)  &kp LALT      &kp LCTRL     &kp LSHFT     &trans           &kp CLCK                                   &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT        &kp DEL       &kp BSPC
+&rgb_ug RGB_COLOR_HSB(97,100,50)   &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans           &kp C_PREV    &kp C_NEXT  &trans           &trans           &trans           &trans           &trans        &kp ENTER
+                                                 &trans        &trans        &trans           &trans           &trans        &trans      &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
