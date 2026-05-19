@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - Insert
   - Print Scrn
-  - CMENU
+  - CALCULATOR
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - Page Up
@@ -93,7 +93,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - CONTEXT MENU
   - CLCK
   - PAGE DOWN
   - ←
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - ␣
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
@@ -133,9 +133,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - /
+  - '*'
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -147,7 +147,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -175,7 +175,7 @@ layers:
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,9 +183,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '0'
+  - .
+  - Insert
 combos:
 - p: [53, 12]
+  k: NUM
+- p: [24, 53]
   k: NUM

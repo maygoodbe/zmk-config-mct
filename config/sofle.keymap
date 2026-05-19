@@ -19,6 +19,11 @@
             bindings = <&mo 3>;
             key-positions = <53 12>;
         };
+
+        l1-tab {
+            bindings = <&mo 3>;
+            key-positions = <24 53>;
+        };
     };
 
     keymap {
@@ -44,7 +49,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         lower_layer {
@@ -65,7 +70,9 @@
                    &trans     &trans    &trans    &trans     &trans             &trans     &trans     &trans    &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         raise_layer {
@@ -79,11 +86,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                               &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &out OUT_TOG  &trans
-&rgb_ug RGB_EFF  &kp INS       &kp PSCRN     &kp K_CMENU   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI                            &kp PG_UP        &kp HOME         &kp UP_ARROW     &kp END          &kp N0        &kp DELETE
-&trans           &kp LALT      &kp LCTRL     &kp LSHFT     &trans           &kp CLCK                                   &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT        &kp DEL       &kp BSPC
-&trans           &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans           &kp C_PREV    &kp C_NEXT  &trans           &trans           &trans           &trans           &trans        &kp ENTER
-                               &trans        &trans        &trans           &trans           &trans        &trans      &trans           &trans           &trans           &trans
+&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3        &bt BT_SEL 4                               &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &out OUT_TOG  &trans
+&rgb_ug RGB_EFF  &kp INS       &kp PSCRN     &kp K_CALCULATOR  &rgb_ug RGB_HUD     &rgb_ug RGB_HUI                            &kp PG_UP        &kp HOME         &kp UP_ARROW     &kp END          &kp N0        &kp DELETE
+&trans           &kp LALT      &kp LCTRL     &kp LSHFT         &kp K_CONTEXT_MENU  &kp CLCK                                   &kp PAGE_DOWN    &kp LEFT         &kp DOWN         &kp RIGHT        &kp DEL       &kp BSPC
+&trans           &kp K_UNDO    &kp K_CUT     &kp K_COPY        &kp K_PASTE         &trans           &kp C_PREV    &kp C_NEXT  &trans           &trans           &trans           &trans           &trans        &kp ENTER
+                               &trans        &trans            &trans              &trans           &trans        &trans      &trans           &kp SPACE        &trans           &trans
             >;
 
             sensor-bindings =
@@ -93,11 +100,11 @@
 
         NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp N7  &kp N8  &kp N9  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp N4  &kp N5  &kp N6  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp SLASH  &kp ASTERISK  &kp MINUS  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp N7  &kp N8     &kp N9        &kp PLUS   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp N4  &kp N5     &kp N6        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2     &kp N3        &trans     &trans  &kp ENTER
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N0     &kp PERIOD    &kp INS
             >;
 
             label = "NUM";
