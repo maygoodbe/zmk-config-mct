@@ -4,7 +4,7 @@ layers:
     ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, PAUSE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
     '$$mdi:apple-keyboard-control$$', LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
   LOW:
-  - Boot
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -76,7 +76,7 @@ layers:
   - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - OUT TOG
-  - Boot
+  - {t: ▽, type: trans}
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - Insert
   - Print Scrn
@@ -89,7 +89,7 @@ layers:
   - End
   - '0'
   - DELETE
-  - RGB COLOR HSB(189,100,50)
+  - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -101,7 +101,7 @@ layers:
   - →
   - ⌦
   - $$mdi:backspace-outline$$
-  - RGB COLOR HSB(97,100,50)
+  - {t: ▽, type: trans}
   - UNDO
   - CUT
   - COPY
@@ -138,7 +138,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,7 +179,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,5 +188,4 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [53, 12]
-  k: ''
-  l: [NUM]
+  k: NUM
