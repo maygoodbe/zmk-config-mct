@@ -132,12 +132,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - /
+  - \
   - '*'
   - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -173,7 +173,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
