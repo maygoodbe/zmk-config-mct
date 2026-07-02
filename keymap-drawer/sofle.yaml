@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', ↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '`', A, S, D, F, G, H, J, K, L,
-    ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, PAUSE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
-    '$$mdi:apple-keyboard-control$$', LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
+    ;, '''', '$$mdi:apple-keyboard-control$$', Z, X, C, V, B, PAUSE, MUTE, N, M, ',', ., /, ENTER, LEFT SHIFT, LEFT WIN, LEFT ALT, LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$',
+    '$$mdi:apple-keyboard-option$$', RIGHT SHIFT]
   LOW:
   - {t: ▽, type: trans}
   - F1
@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - Insert
   - Print Scrn
-  - CALCULATOR
+  - CALC
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - Page Up
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - ␣
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
@@ -187,5 +187,5 @@ layers:
   - .
   - Insert
 combos:
-- p: [53, 12]
+- p: [53, 54]
   k: NUM
